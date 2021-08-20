@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping cart</title>
+    <!-- bootstrap Cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- fontawsome kIts  -->
+    <script src="https://kit.fontawesome.com/780f7a6863.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <main class="container">
+        <h1>my Shopping cart</h1>
+    <article class="bg-dark mt-5 p-4 mb-5">
+        <section class="container ">
+          
+            <div class="mt-5 bg-info d-flex justify-content-between align-items-center  text-center">
+             <div class="d-flex m-5 text-center align-items-center " >
+                 <img src="/images/product-1.png" alt="" height="135px" width="137px" class="">
+                 <h4 class="ms-5">iPhone 11 128GB Black</h4>
+             </div>
+             <div class=" m-5 ">
+                <button  id="phone-minus" class="btn-danger text-white"><i class="fas fa-minus"></i></i></button>
+                 <input type="number" name="" id="phone-input" value="0"  class="w-25">
+              
+                 <button id="phone-plus" class="bg-danger text-white"> <i class="fas fa-plus"></i></button>
+            </div>
+            <div >
+                <h4>Price=$<span id="phone-price">1219</span></h4>
+            </div>
+ 
+ 
+             </div>
+         </section>
+         <section class="container">
+             <div class="mt-5 bg-info d-flex justify-content-between align-items-center  text-center">
+                 <div class="d-flex m-5 text-center align-items-center " >
+                     <img src="/images/product-2.png" alt="" height="135px" width="137px" class="">
+                     <h4 class="ms-5">iPhone 11 Silicone Case - Black</h4>
+                 </div>
+                 <div>
+                    <button id="case-minus" class="btn-danger text-white"><i class="fas fa-minus"></i></i></button>
+                     <input type="number" name=""  id="case-input" value="0" class="w-25">
+                  
+                     <button id="case-plus" class="bg-danger text-white"> <i class="fas fa-plus"></i></button>
+                </div>
+                <div class="m-5">
+                    <h4>Price=$<span id="case-price">59</span></h4>
+                </div>
+     
+     
+                 </div>
+         </section>
+         <section class="container d-flex justify-content-between align-items-center bg-info mt-5 p-3 mb-5">
+             <div class="m-5">
+                 <h5>Subtotal: </h5>
+             <h5>tax: </h5>
+             <h5>total price: </h5>
+             </div>
+ 
+             <div  class="m-4">
+ 
+                 <h5>$ <span id="subtotal">1278</span></h5>
+                 <h5>$ <span id="tax">0</span></h5>
+                 <h5>$ <span id="totalprice">1278</span></h5>
+ <button class=" btn-success p-3 text-white text-capitalize fs-3 mt-5  rounded-3" type="submit">CheckOut</button>
+         </section>
+    </article>
+    </main>
+    <script src="/app.js"></script>
+    
+</body>
+</html>
